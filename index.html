@@ -1,0 +1,97 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Mobile Web App</title>
+<link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="js/imageflip.mini.js"></script>
+<style type="text/css">
+#iGallery		{list-style:none; padding:0px; margin:0px}
+#iGallery li	{list-style:none; padding:2px; margin:2px; border:1px solid #999; float:left}
+
+/* imageflip CSS. Copy & Paste this to your CSS file */
+#imageflippage	{background-color:#000; margin:0px; padding:0px; border:none; height:100%; width:100%}
+#tadcontent		{padding:0px; margin:0px; position:relative; background:#000; height:100%; width:100%;}
+#imageflipimg	{vertical-align:middle; height:100%; width:100%; z-index:98; background-position:center; background-size:contain; text-align:center; background-repeat:no-repeat }
+#imagefliper	{width:100%; top:45px; bottom:0px; position:absolute; z-index:99}
+#tadnavi		{position:fixed; top:0px; z-index:100; width:100%; opacity:0.7; display:none }
+#tadinfo		{position:fixed; display:none; bottom:0px; width:100%; padding:5px; background-color:#333333; opacity:0.7; color:#FFFFFF; text-align:center; font-size:small; font-family:Verdana, Geneva, sans-serif}
+
+</style>
+<script type="text/javascript">
+$( document ).delegate("#Photos", "pageinit", function() {
+	$('#iGallery').imageflip()	
+})
+</script>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>Page One</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#Photos">Photos</a></li>
+            <li><a href="#page3">Page Three</a></li>
+			<li><a href="#page4">Page Four</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Photos">
+	<div data-role="header">
+		<h1>Page Two</h1>
+	</div>
+	<div data-role="content">	
+		<div class="content-primary">	
+		<ul id="iGallery">
+			<li><a href="images/4f7d341e82ba1.jpg"><img src="images/_4f7d341e82ba1.jpg" /></a></li>
+			<li><a title="Add Image discription to Title Attribe of A tag to display in here" href="images/4f7d363cb2236.jpg"><img src="images/_4f7d363cb2236.jpg" /></a></li>
+			<li><a href="images/4f7d386046e12.jpg"><img src="images/_4f7d386046e12.jpg" /></a></li>
+			<li><a href="images/4f506f7a8ef30.jpg"><img src="images/_4f506f7a8ef30.jpg" /></a></li>
+			<li><a href="images/4f975e2862141.jpg"><img src="images/_4f975e2862141.jpg" /></a></li>
+			<li><a href="images/4f85120f97815.jpg"><img src="images/_4f85120f97815.jpg" /></a></li>
+			<li><a href="images/4f85134ae2c05.jpg"><img src="images/_4f85134ae2c05.jpg" /></a></li>
+			<li><a href="images/4f828774366b1.jpg"><img src="images/_4f828774366b1.jpg" /></a></li>
+			<li><a href="images/4fce4e99213b5.jpg"><img src="images/_4fce4e99213b5.jpg" /></a></li>
+		</ul>
+		</div>		
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1>Page Three</h1>
+	</div>
+	<div data-role="content">	
+		Content		
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+		<h1>Page Four</h1>
+	</div>
+	<div data-role="content">	
+		Content		
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+</body>
+</html>
