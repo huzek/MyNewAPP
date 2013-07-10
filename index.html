@@ -126,8 +126,9 @@
 </head>
 <body>
 
-    <div data-role="page" id="page" data-position="fixed">
-        <div data-role="header">
+<!-- PAGE -->
+<div data-role="page" id="page" >
+        <div data-role="header" data-position="fixed">
             <h3>Huzefa Tunkiwala</h3>
             <a href="index.html" data-icon="gear" class="ui-btn-right">Options</a>
         </div>
@@ -150,12 +151,32 @@
             </div>
         </div>
     </div>
+    
+<!-- PAGE -->    
+<div data-role="page" id="About">
+      <div data-role="header" data-theme="a" data-position="inline" data-id="barra" data-position="fixed" >
+            <a href="#page" data-icon="home" data-direction="reverse" data-theme="a">Back</a>
+        <h1>About</h1>
+      </div>
+      <div data-role="content">Content</div>
+      <div data-role="footer" data-position="fixed" data-id="myfooter">
+            <div data-role="navbar" class="nav-glyphish-example" data-grid="d">
+                <ul>
+                    <li><a href="#About" class="About1" data-icon="custom" data-theme="b">About</a></li>
+                    <li><a href="#Photos" class="Photos1" data-icon="custom">Photos</a></li>
+                    <li><a href="#Videos" class="Videos1" data-icon="custom">Videos</a></li>
+                    <li><a href="#details" class="Location1" data-icon="custom" >Location</a></li>
+                    <li><a href="#Contact" class="Contact1" data-icon="custom">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-    <div data-role="page" id="Photos" data-position="fixed">
-        <div data-role="header" data-theme="a" data-position="inline" data-id="barra">
+    <div data-role="page" id="Photos">
+        <div data-role="header" data-theme="a" data-position="inline" data-id="barra" data-position="fixed" >
             <a href="#page" data-icon="home" data-direction="reverse" data-theme="a">Back</a>
             <h1>Photos</h1>
-        </div>
+      </div>
         <div data-role="content">
             <div class="content-primary">
                 <ul id="iGallery">
@@ -191,10 +212,12 @@
                 </ul>
             </div>
         </div>
-    </div>
+</div>
 
-    <div data-role="page" id="Videos" data-position="fixed">
-        <div data-role="header">
+
+<!-- PAGE -->
+    <div data-role="page" id="Videos" >
+        <div data-role="header" data-position="fixed">
             <a href="#page" data-icon="home" data-direction="reverse" data-theme="a">Back</a>
             <h1>Videos</h1>
         </div>
@@ -220,9 +243,11 @@
             </div>
         </div>
     </div>
-
-    <div data-role="page" id="details" class="details-page" data-position="fixed">
-        <div data-role="header">
+    
+    
+<!-- PAGE -->
+    <div data-role="page" id="details" class="details-page" >
+            <div data-role="header" data-position="fixed">
             <a href="#page" data-icon="home" data-direction="reverse" data-theme="a">Back</a>
             <h1>Map</h1>
         </div>
@@ -243,5 +268,26 @@
             </div>
         </div>
     </div>
+    
+<!-- PAGE -->    
+<div data-role="page" id="Contact">
+      <div data-role="header">
+        <h1>Header</h1>
+      </div>
+      <div data-role="content">Content</div>
+      <div data-role="footer" data-position="fixed" data-id="myfooter">
+            <div data-role="navbar" class="nav-glyphish-example" data-grid="d">
+                <ul>
+                    <li><a href="#About" class="About1" data-icon="custom">About</a></li>
+                    <li><a href="#Photos" class="Photos1" data-icon="custom">Photos</a></li>
+                    <li><a href="#Videos" class="Videos1" data-icon="custom">Videos</a></li>
+                    <li><a href="#details" class="Location1" data-icon="custom" >Location</a></li>
+                    <li><a href="#Contact" class="Contact1" data-icon="custom" data-theme="b">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    
 </body>
 </html>
