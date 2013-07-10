@@ -29,23 +29,23 @@ $( document ).delegate("#Photos", "pageinit", function() {
 </head> 
 <body> 
 
-<div data-role="page" id="page">
+<div data-role="page" id="page" data-position="fixed">
 	<div data-role="header">
 		<h1>Page One</h1>
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview">
 			<li><a href="#Photos">Photos</a></li>
-            <li><a href="#page3">Page Three</a></li>
+            <li><a href="#Videos">Videos</a></li>
 			<li><a href="#page4">Page Four</a></li>
 		</ul>		
 	</div>
-	<div data-role="footer">
+	<div data-role="footer" data-position="fixed">
 		<h4>Page Footer</h4>
 	</div>
 </div>
 
-<div data-role="page" id="Photos">
+<div data-role="page" id="Photos" data-position="fixed">
 	<div data-role="header">
 		<h1>Page Two</h1>
 	</div>
@@ -64,31 +64,38 @@ $( document ).delegate("#Photos", "pageinit", function() {
 		</ul>
 		</div>		
 	</div>
-	<div data-role="footer">
+	<div data-role="footer" data-position="fixed">
 		<h4>Page Footer</h4>
 	</div>
 </div>
 
-<div data-role="page" id="page3">
+<div data-role="page" id="Videos" data-position="fixed">
 	<div data-role="header">
 		<h1>Page Three</h1>
 	</div>
 	<div data-role="content">	
-		Content		
+		 <div align="center">
+                <video width="98%" height="200px" controls>
+                    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                    Your browser does not support the video tag.
+                </video>	
 	</div>
-	<div data-role="footer">
+    </div>
+	<div data-role="footer" data-position="fixed">
 		<h4>Page Footer</h4>
 	</div>
 </div>
 
-<div data-role="page" id="page4">
+<div data-role="page" id="page4" data-position="fixed">
 	<div data-role="header">
 		<h1>Page Four</h1>
 	</div>
 	<div data-role="content">	
 		Content		
 	</div>
-	<div data-role="footer">
+	<div data-role="footer" data-position="fixed">
 		<h4>Page Footer</h4>
 	</div>
 </div>
