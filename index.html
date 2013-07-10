@@ -5,7 +5,7 @@
 <title>jQuery Mobile Web App</title>
 <link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
 <link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
-<link rel="stylesheet" href="Mystyle.css" />
+<link rel="stylesheet" href="Mystyle.css" />s
  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
   <script type="text/javascript" src="MyScript.js"></script>
@@ -66,8 +66,9 @@ $( document ).delegate("#Photos", "pageinit", function() {
 
 <div data-role="page" id="page" data-position="fixed">
 	<div data-role="header">
-		<h1>Page One</h1>
-	</div>
+            <h3>Huzefa Tunkiwala</h3>
+            <a href="index.html" data-icon="gear" class="ui-btn-right">Options</a>
+        </div>
 	<div data-role="content">	
 		<ul data-role="listview">
 			<li><a href="#Photos">Photos</a></li>
@@ -81,8 +82,9 @@ $( document ).delegate("#Photos", "pageinit", function() {
 </div>
 
 <div data-role="page" id="Photos" data-position="fixed">
-	<div data-role="header">
-		<h1>Page Two</h1>
+	 <div data-role="header" data-theme="a" data-position="inline" data-id="barra">
+            <a href="#page" data-icon="home" data-transition="slide" data-direction="reverse" data-theme="a">Back</a>
+		<h1>Photos</h1>
 	</div>
 	<div data-role="content">	
 		<div class="content-primary">	
@@ -105,8 +107,9 @@ $( document ).delegate("#Photos", "pageinit", function() {
 </div>
 
 <div data-role="page" id="Videos" data-position="fixed">
-	<div data-role="header">
-		<h1>Page Three</h1>
+	 <div data-role="header" >
+            <a href="#page" data-icon="home" data-transition="slide" data-direction="reverse" data-theme="a">Back</a>
+		<h1>Videos</h1>
 	</div>
 	<div data-role="content">	
 		 <div align="center">
@@ -124,8 +127,9 @@ $( document ).delegate("#Photos", "pageinit", function() {
 </div>
 
 <div data-role="page" id="details"   class="details-page" data-position="fixed">
-	<div data-role="header">
-		<h1>Page Four</h1>
+	 <div data-role="header">
+            <a href="#page" data-icon="home" data-transition="slide" data-direction="reverse" data-theme="a">Back</a>
+		<h1>Map</h1>
 	</div>
 	<div data-role="content" id="map_content" data-theme="a">
                  <div id="map_content">
@@ -136,6 +140,5 @@ $( document ).delegate("#Photos", "pageinit", function() {
 		<h4>Page Footer</h4>
 	</div>
 </div>
-
 </body>
 </html>
