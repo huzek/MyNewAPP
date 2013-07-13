@@ -16,13 +16,13 @@
 
     <script type="text/javascript">
         function initialize() {
-            setupMap(29.33852576354393, 48.00433695316315, 16, true);
+            setupMap(29.33852576354393, 48.00433695316315, 14, true);
             var quakeEventLatlng = new google.maps.LatLng(29.33852576354393, 48.00433695316315);
             var marker = createQuakeEventMarker(quakeEventLatlng)
             marker.setAnimation(google.maps.Animation.DROP)
         }
 
-        // Initialize the map when the jQuery Mobile pageshow event is triggered 
+        // Initialize the map when the jQuery Mobile pageshow event is triggered
         $('.details-page').live("pageshow", function () {
             if (map == null) {
                 initialize();
@@ -151,8 +151,8 @@
             </div>
         </div>
     </div>
-    
-<!-- PAGE -->    
+
+<!-- PAGE -->
 <div data-role="page" id="About">
       <div data-role="header" data-theme="a" data-position="inline" data-id="barra" data-position="fixed" >
             <a href="#page" data-icon="home" data-direction="reverse" data-theme="a">Back</a>
@@ -243,8 +243,8 @@
             </div>
         </div>
     </div>
-    
-    
+
+
 <!-- PAGE -->
     <div data-role="page" id="details" class="details-page" >
             <div data-role="header" data-position="fixed">
@@ -268,8 +268,8 @@
             </div>
         </div>
     </div>
-    
-<!-- PAGE -->    
+
+<!-- PAGE -->
 <div data-role="page" id="Contact">
       <div data-role="header">
         <h1>Header</h1>
@@ -287,7 +287,7 @@
             </div>
         </div>
     </div>
-    
-    
+
+
 </body>
 </html>
